@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EZ-Convert - Image Compression & Conversion</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header><h1>EZ-Convert - Image Compression & Conversion</h1></header>
+  <div class="container">
+   <div class="drop-zone" id="drop-zone">
+    <p>Drag and drop an image here</p>
+    <img id="dropped-image" src="" alt="" style="display:none; width: 100%; height: auto;">
+   </div>
+  <div class="format-compress-container">
+    <label for="format">Convert to:</label>
+    <select id="format">
+      <option value="jpeg">JPEG</option>
+      <option value="png">PNG</option>
+      <option value="webp">WEBP</option>
+    </select>
+    <span id="compression-container">
+      <label for="compression">Compression Rate: <span id="compression-value">0.6</span></label> 
+      <input type="range" id="compression" name="compression" min="0" max="10">
+      <button id="download">Download</button>
+    </span>
+   </div>
+  </div>
+  <script src="UPNG.js"></script>
+  <script src="pako.min.js"></script>  
+  <script src="popup.js"></script>
+</body>
+</html>

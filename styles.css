@@ -1,0 +1,91 @@
+body {
+    font-family: Oswald, sans-serif;
+    text-align: center;
+    width:600px;
+    font-size:12pt;
+    margin:0;
+  }
+  h1 {
+    font-size: 1.5em;
+    color:white;
+  }
+  .container {
+    margin:8px;
+  }
+  header {
+    background-color:rgb(0 88 255 / 68%);
+    padding:10px;
+  }
+  .drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color:#fff5f5;
+  }
+  
+  .drop-zone.dragover {
+    border-color: #000;
+  }
+  .file-rename {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap:10px;    
+  }  
+  #format {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  #compression {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  #compression-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #compression-value {
+    font-weight:700;
+  }
+  #filename {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  .format-compress-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px;
+    margin: 20px 0;
+  }
+  #download {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    color:white;
+    font-weight:700;
+    padding: 5px 15px;
+    background-color: rgb(0 88 255 / 68%);
+  }
+  #download:hover {
+    background-color:  rgb(0 73 213 / 68%);
+  }
+  input[type="range"] {
+    accent-color:  rgb(0 88 255 / 68%) !important;
+  }  
+  input[type="range"]:hover {
+    accent-color:  rgb(0 73 213 / 68%) !important;
+  }  
